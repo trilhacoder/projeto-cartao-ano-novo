@@ -19,7 +19,7 @@ campoImagemFundo.addEventListener("keyup", function() {
     console.log("teste")
     let srcImagemFundo = campoImagemFundo.value    
     if (srcImagemFundo.trim() == "") {
-        campoImagemFundo.backgroundImage = "url(feliz-ano-novo-2023.png)"
+        campoImagemFundo.backgroundImage = "url(fundo1.png)"
         return
     }
     let imagemFundoCartao = document.querySelector("#cartao")
@@ -42,7 +42,7 @@ async function compartilhar() {
     let canva = await html2canvas(cartao)
     const dataUrl = canva.toDataURL();
     const blob = await (await fetch(dataUrl)).blob();
-    const filesArray = [new File([blob], 'feliz-ano-novo.png', { type: blob.type, lastModified: new Date().getTime() })]
+    const filesArray = [new File([blob], 'fundo1.png', { type: blob.type, lastModified: new Date().getTime() })]
     const shareData = { files: filesArray }
     navigator.share(shareData).then(() => { console.log('Shared successfully') })
 }
