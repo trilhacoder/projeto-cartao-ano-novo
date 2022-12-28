@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #D9DD1D;
+    border: 2px solid #07A9BF;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 35px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #082759;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ABABAB;
+    padding: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #ABABAB;
+    padding: 5px;
+}
+
+button {
+    background-color: #07A9BF;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cartao {
+    max-width: 100%;
+    background-image: url(https://orlario.com.vc/wp-content/uploads/2020/12/Reveillon.jpg);
+    aspect-ratio: 9 / 16;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+}
+
+.cartao h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 48px;
+    color: #CBC41F;
+}
+
+.cartao span {
+    font-family: 'Inder', sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.cartao p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.cartao img {
+    margin-top: 30px;
+    max-width: 100%;
+}

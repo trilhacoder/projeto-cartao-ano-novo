@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Ano Novo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Criador de Cartão - Ano Novo</h1>
+
+        <form>
+            <label for="titulo">Título</label>
+            <input placeholder="Feliz Ano Novo" id="titulo" type="text">
+
+            <label for="ano">Ano</label>
+            <input placeholder="2023" id="ano" type="text">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea placeholder="Que este novo ano seja repleto de saúde e muitas realizações." id="mensagem" cols="30" rows="3"></textarea>
+
+            <label for="imagem-fundo">Imagem de fundo</label>
+            <input id="imagem-fundo" type="text">
+
+            <label for="imagem-frente">Imagem da frente</label>
+            <input id="imagem-frente" type="text">
+
+            <button>Compartilhar cartão!</button>
+        </form>
+
+        <span>Pré-visualização:</span>
+        <div id="cartao" class="cartao">
+            <h2 id="cartao-titulo">Feliz Ano Novo</h2>
+            <span id="cartao-ano">2023</span>
+            <p id="cartao-mensagem">Que este novo ano seja repleto de saúde e muitas realizações.</p>
+            <img id="cartao-imagem-frente" src="https://super.abril.com.br/wp-content/uploads/2016/09/super_imgano_novo_0_0.jpg?quality=90&strip=info&w=1280&h=720&crop=1" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
